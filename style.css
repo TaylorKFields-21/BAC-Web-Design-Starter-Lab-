@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+ul {
 	list-style: none;
 }
 blockquote, q {
@@ -46,36 +46,52 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-/************ GLOBAL ****************/
+/******************** ROOT VARIABLES *************************/
+:root {
+     --dark-green: #1B211A;
+     --green:#628141;
+     --light-green:#8BAE66;
+     --lighter-green:#DBE4C9;
+     --cream:#EBD5AB;
+     --white:#FCF9EA;
+}
+/******************** GLOBAL *************************/
+body{
+    background-color: var(--lighter-green);
+}
 h2{
-    font-size: 1.5em;
+    font-size: 1.7em;
     padding-left: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
+    color: var(--dark-green);
 }
 p{
+    font-size: 1.1em;
     padding-left: 25px;
 }
 section{
     padding: 20px;
 }
-/************* NAV ****************/
+/******************** NAV ****************************/
 nav ul{
     display: flex;
     justify-content: center;
+    background-color: var(--white);
 }
 nav li{
     padding: 20px;
 }
 nav a{
     text-decoration: none;
+    font-size: 1.5em;
+    color:var(--dark-green);
 }
 
-/*********** H1/HERO ***************/
+/********************** H1/HERO ***********************/
 
 .hero{
-   background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('images/Photo1.jpg'); 
+   background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.547)),url('images/Photo1.jpg'); 
    background-size: cover;
    background-position: center;
    height: 400px;
@@ -84,10 +100,11 @@ nav a{
    align-items: center;
 }
 h1{
-  color: white;
+  color: var(--lighter-green);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.867);
   font-size: 2.3em;
 }
-/************** ABOUT ME ******************/
+/******************** ABOUT ME *************************/
 .about-content{
  display: flex;
  align-items: center;
@@ -96,12 +113,25 @@ h1{
 .about-content img{
     width:150px;
     height: 160px;
- }
-
-
-
-/************* Interest ***************/
+}
+/******************** Interest ************************/
 ol{
     padding-top: 10px;
+    padding-left: 45px;
+}
+#interest h2{
+   padding: 20px;
+}
+
+/******************** Contact ************************/
+#contact a{
     padding-left: 25px;
+    color: var(--green);
+}
+
+/******************** Contact ************************/
+footer{
+    background-color: var(--white);
+    text-align: center;
+    padding: 30px;
 }
