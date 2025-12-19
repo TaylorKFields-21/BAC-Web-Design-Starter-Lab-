@@ -83,7 +83,7 @@ hr{
 nav ul{
     display: flex;
     justify-content: center;
-    background-color: var(--white);
+    background-color: var(--dark-green);
 }
 nav li{
     padding: 20px;
@@ -91,13 +91,13 @@ nav li{
 nav a{
     text-decoration: none;
     font-size: 1.5em;
-    color:var(--dark-green);
+    color:var(--lighter-green);
 }
 
 /********************** H1/HERO ***********************/
 
 .hero{
-   background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.547)),url('images/Photo1.jpg'); 
+   background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.547)),url('images/Photo3.jpg'); 
    background-size: cover;
    background-position: center;
    height: 400px;
@@ -125,6 +125,10 @@ ol{
     padding-top: 10px;
     padding-left: 45px;
 }
+ol li{
+    font-size: 1.1em;
+    color: var(--green);
+}
 #interest h2{
    padding: 20px;
 }
@@ -135,9 +139,12 @@ ol{
     color: var(--green);
 }
 
-/******************** Contact ************************/
+/******************** footer ************************/
 footer{
-    background-color: var(--white);
+    background-color: var(--dark-green);
     text-align: center;
     padding: 30px;
+}
+footer p{
+    color: var(--lighter-green);
 }
