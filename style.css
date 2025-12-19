@@ -46,3 +46,62 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/************ GLOBAL ****************/
+h2{
+    font-size: 1.5em;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+p{
+    padding-left: 25px;
+}
+section{
+    padding: 20px;
+}
+/************* NAV ****************/
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav li{
+    padding: 20px;
+}
+nav a{
+    text-decoration: none;
+}
+
+/*********** H1/HERO ***************/
+
+.hero{
+   background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('images/Photo1.jpg'); 
+   background-size: cover;
+   background-position: center;
+   height: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+h1{
+  color: white;
+  font-size: 2.3em;
+}
+/************** ABOUT ME ******************/
+.about-content{
+ display: flex;
+ align-items: center;
+ padding: 20px;
+}
+.about-content img{
+    width:150px;
+    height: 160px;
+ }
+
+
+
+/************* Interest ***************/
+ol{
+    padding-top: 10px;
+    padding-left: 25px;
+}
